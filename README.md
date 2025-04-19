@@ -1,6 +1,32 @@
-# Voice-Identifier
-Able to learn the voices of people and then identify when given a clip. Accepts files (.wav,mp3.ogg)
-You can edit the code as required and choose whose voices need to be identified. Currently I have chosen Rayyan, Swen, Riyaad and Adithya as my dataset.
-Also by adding more voices I was able to solve the overfitting issue, where the machines learns too well and is unable find differences. This can be avoided by adding more variance in voice.
-The voice is processed by the librosa library and tensorflow is used to train the model. Math plotlib and Numpy for plotting the learning curve graphs and numerical calculations for the X and Y values.
-Unable to upload dataset because of the size since it requires many voices to work efficiently with 95.6% accuration as of now.
+# Voice Identifier ML Model
+
+A simple Machine Learning project to recognize a speaker's voice from a set of recorded samples.
+
+## Features
+- Accepts 4 speaker samples.
+- Predicts speaker identity based on input voice.
+- Implemented basic data preprocessing and feature extraction.
+- Handles overfitting issues (in progress).
+
+## Tech Stack
+- Python
+- TensorFlow
+- Scikit-learn
+- Librosa (for audio feature extraction)
+
+## How to Run
+1. Clone this repository.
+2. Install dependencies:
+
+pip install -r requirements.txt
+
+3. Open and run:
+
+VoiceIdentifier.py
+
+4. Train the model with sample audio inputs.
+
+## Future Improvements
+- Expand dataset for better generalization.
+- Implement model regularization techniques.
+- Build a simple web-based user interface.
